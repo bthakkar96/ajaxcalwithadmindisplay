@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="cntrlphtml_post_listing_data_source" xsi:type="string">Ajaxphtml\Controllerphtml\Model\ResourceModel\Controllerphtml\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Ajaxphtml\Controllerphtml\Model\ResourceModel\Controllerphtml\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">ajaxphtml_controllerphtml_data</argument>
+            <argument name="resourceModel" xsi:type="string">Ajaxphtml\Controllerphtml\Model\ResourceModel\Controllerphtml</argument>
+        </arguments>
+    </virtualType>
+</config>

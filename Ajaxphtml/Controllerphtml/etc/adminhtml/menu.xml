@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ajaxphtml_Controllerphtml::manager" title="Iverve calculator" module="Ajaxphtml_Controllerphtml" sortOrder="80" resource="Ajaxphtml_Controllerphtml::manager"/>
+        <add id="Ajaxphtml_Controllerphtml::add_row" title="Calculator" module="Ajaxphtml_Controllerphtml" sortOrder="20" parent="Ajaxphtml_Controllerphtml::manager" action="cntrlphtml/post/index" resource="Ajaxphtml_Controllerphtml::add_row"/>
+    </menu>
+</config>
